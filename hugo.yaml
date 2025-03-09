@@ -1,12 +1,12 @@
-title: ''
-baseURL: 'http://localhost:1313'
+title: 'Hugo FixIt'
+baseURL: '/hugo-fixit-yaml/'
 defaultContentLanguage: en
 languageCode: en
 languageName: English
 hasCJKLanguage: false
 pagination:
   pageSize: 12
-copyright: 'Attajak Janrak'
+copyright: '[attajak](https://gìthub.com/attajak/)'
 enableRobotsTXT: true
 enableGitInfo: true
 enableEmoji: true
@@ -184,7 +184,8 @@ sitemap:
   priority: 0.5
 
 Permalinks:
-  posts: 'posts/:slugorfilename'
+  # posts: 'posts/:slugorfilename'
+  posts: 'posts/:slugorcontentbasename'
 
 privacy:
   x:
@@ -235,6 +236,7 @@ outputs:
   home:
     - html
     - rss
+    - jsonfeed
     - archives
     - offline
     - search
@@ -244,13 +246,16 @@ outputs:
   section:
     - html
     - rss
+    - jsonfeed
   taxonomy:
     - html
   term:
     - html
     - rss
+    - jsonfeed
 
 taxonomies:
+  _merge: shallow
   category: categories
   tag: tags
   collection: collections
@@ -277,7 +282,7 @@ params:
     link: ''
     avatar: ''
   gitInfo:
-    repo: ''
+    repo: 'https://github.com/attajak/hugo-fixit/hugo-fixit-yaml'
     branch: main
     dir: content
     issueTpl: >-
@@ -644,7 +649,7 @@ params:
     cacheRemote: false
     optimise: false
   customPartials:
-    head: [                                                            "inject/component-projects.html",
+    head: [                                                             "inject/component-projects.html",
       "inject/fixit-docs-bookmark.html",
       "inject/shortcode-rewards.html",
       ]
