@@ -1,0 +1,8 @@
+node_modules
+build
+public
+resources
+_vendor
+.vercel
+jsconfig.json
+.hugo_build.lock
