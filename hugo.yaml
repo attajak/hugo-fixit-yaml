@@ -12,6 +12,7 @@ enableGitInfo: true
 enableEmoji: true
 # theme: 'FixIt'
 # theme: 'github.com/hugo-fixit/fixit-bundle'
+ignoreLogs: ['error-get-remote-json']
 
 menu:
   main:
@@ -49,6 +50,56 @@ menu:
       weight: 33
       params:
         icon: fa-solid fa-tags
+    - identifier: home
+      parent: ''
+      pre: ''
+      post: ''
+      name: Home
+      url: /
+      title: ''
+      weight: 10
+      params:
+        icon: fa-solid fa-home
+    - identifier: projects
+      parent: ''
+      pre: ''
+      post: ''
+      name: Projects
+      url: /projects/
+      title: ''
+      weight: 20
+      params:
+        icon: fa-solid fa-laptop-code
+    - identifier: posts
+      parent: ''
+      pre: ''
+      post: ''
+      name: Posts
+      url: /posts/
+      title: ''
+      weight: 30
+      params:
+        icon: fa-solid fa-pen
+    - identifier: about
+      parent: ''
+      pre: ''
+      post: ''
+      name: About
+      url: /about/
+      title: ''
+      weight: 40
+      params:
+        icon: fa-solid fa-signature
+    - identifier: contect
+      panent: ''
+      pre: ''
+      post: ''
+      name: Contect
+      url: /contect/
+      title: ''
+      weight: 40
+      params:
+        icon: fa-solid fa-envelope
 
 related:
   includeNewer: false
@@ -616,6 +667,35 @@ params:
       ]
     postFooterBefore: []
     postFooterAfter: []
+
+  flyfish:
+    enable: true
+    light: "rgb(0 119 190 / 10%)"
+    dark: "rgb(255 255 255 / 10%)"
+
+  mDevtools:
+    enable: true
+    type: "eruda"
+
+  autoTranslate:
+    enable: false
+    service: 'client.edge'
+    languages: []
+    ignoreID: []
+    ignoreClass: []
+    ignoreTag: []
+    detectLocalLanguage: false
+    cdn: ""
+
+  projectsAdapters:
+    enable: true
+    onlyPublic: true
+    categories: []
+    collections: []
+    ignoreList: []
+    projectsAdapters.params:
+      hiddenFromHomePage: true
+
   dev:
     enable: false
     c4u: false

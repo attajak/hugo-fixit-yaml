@@ -5,7 +5,7 @@
   "private": "true",
   "scripts": {
     "test": "npm run",
-    "create": "hugo nee content",
+    "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info",
     "server": "hugo server -D -E -F -N -O --disableFastRender --renderToMemory --bind 0.0.0.0 -b http://localhost:1313",
     "server:production": "npm run server -- -e production",
