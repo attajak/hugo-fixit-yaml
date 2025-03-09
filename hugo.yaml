@@ -140,6 +140,7 @@ module:
     path: github.com/hugo-fixit/fixit-bundle
 
 markup:
+  _merge: shallow
   highlight:
     codeFences: true
     lineNos: true
@@ -233,6 +234,7 @@ outputFormats:
     permalinkable: true
 
 outputs:
+  _merge: shallow
   home:
     - html
     - rss
