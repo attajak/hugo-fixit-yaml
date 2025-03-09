@@ -332,7 +332,7 @@ params:
     mobileMode: auto
     title:
       logo: ''
-      name: ''
+      name: 'Hugo FixIt'
       pre: ''
       post: ''
       typeit: false
